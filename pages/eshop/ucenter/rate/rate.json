@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "评价",
+  "usingComponents": {
+    "wux-rater": "/components/external/wux/rater/index",
+    "blank-line": "/components/basic/blankLine/blankLine"
+  }
+}

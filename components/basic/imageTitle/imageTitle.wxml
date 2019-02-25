@@ -1,0 +1,9 @@
+<view class="borderN backgTr">
+    <view class="backgW pos-re">
+        <photo src="{{src}}" stylePhoto="{{myStylePhoto}}" ></photo>
+        <view class="pos-ab" style="left:20px;top:40px;">
+            <s-text text="{{title}}" styleText="{{myStyleTitle}}"></s-text>
+            <s-text text="{{subtitle}}" styleText="{{myStyleSubtitle}}"></s-text>
+        </view>
+    </view>
+</view>

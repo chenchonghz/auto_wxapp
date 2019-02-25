@@ -1,0 +1,8 @@
+<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000"
+    style="{{style1}}">
+    <swiper-item wx:for="{{dataList}}" wx:key="{{item.id}}">
+        <navigator url="{{item.link}}">
+            <image src="{{item.image_url}}" background-size="cover" style="{{style2}}"></image>
+        </navigator>
+    </swiper-item>
+</swiper>

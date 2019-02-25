@@ -1,0 +1,26 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "login-alert": "/components/auth/loginAlert/loginAlert",
+    "s-title": "/components/basic/sTitle/sTitle",
+    "tarbar": "/components/basic/tarbar/tarbar",
+    "photo": "/components/basic/photo/photo",
+    "phase": "/components/basic/phase/phase",
+    "image-title": "/components/basic/imageTitle/imageTitle",
+    "blank-line": "/components/basic/blankLine/blankLine",
+    "s-text": "/components/basic/sText/sText",
+    "s-button": "/components/basic/sButton/sButton",
+    "two-box": "/components/basic/twoBox/twoBox",
+    "four-box": "/components/basic/fourBox/fourBox",
+    "s-audio": "/components/basic/sAudio/sAudio",
+    "swiper-images": "/components/basic/swiperImages/swiperImages",
+    "phone-call": "/components/basic/phoneCall/phone",
+    "location": "/components/basic/location/location",
+    "s-video": "/components/basic/sVideo/sVideo",
+    "banner": "/components/eshop/banner/banner",
+    "navi": "/components/eshop/navi/navi",
+    "goods-list-a": "/components/eshop/goodsListA/goodsListA",
+    "goods-list-b": "/components/eshop/goodsListB/goodsListB",
+    "marquee": "/components/eshop/marquee/marquee"
+  }
+}

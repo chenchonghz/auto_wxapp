@@ -1,0 +1,28 @@
+/**app.wxss**/
+.page {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: "iconfont", "Microsoft YaHei" !important;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+page{
+    background-color: #efeef6;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mg-b-0 {
+    margin-bottom: 0;
+}
+.pd-b-0 {
+    padding-bottom: 0!important;
+}
+
+
+.fonts16{
+    font-size: 16px;
+}

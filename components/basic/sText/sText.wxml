@@ -1,0 +1,4 @@
+<view class="bg_default {{class1}}" style="{{style1}}">
+    <view class="{{class2}}" style="{{style2}}"
+          catchtap="onTap" bindlongpress="onLongtap">{{text}}</view>
+</view>

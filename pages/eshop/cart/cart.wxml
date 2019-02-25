@@ -1,0 +1,55 @@
+<view class="touch-container" wx:if="{{cartGoods.length>0}}">
+    <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{cartGoods}}" wx:key="">
+        <view class="content">
+            <view class="tabs backgW item borderN pd-l-0 fontS14">
+                <view class="tab-item2">
+                    <span class="">
+                        <radio value="1" style="color:#fff;" checked="{{item.checked ? 'checked' : ''}}"
+                               bindtap="checkedItem" data-item-index="{{index}}" />
+                    </span>
+                    <image src="{{item.list_pic_url}}" class="imgW70 leftImg" mode="widthFix" />
+                </view>
+                <view class="tab-item4 pd-l-10">
+                    <view class="">{{item.goods_name}}</view>
+                    <view class="fontS12 col-gary">{{item.goods_specifition_name_value==null?"标准规格":item.goods_specifition_name_value}}</view>
+                    <view class="">
+                        <span class="fontW">￥{{item.retail_price}}</span>
+                        <view class="fr spbox">
+                            <span bindtap="cutNumber" data-item-index="{{index}}">-</span>
+                            <span>{{item.number}}</span>
+                            <span bindtap="addNumber" data-item-index="{{index}}">+</span>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="del" catchtap="deleteCart" data-item-index="{{index}}">
+            <image src="{{staticImgHost}}rubbish.png" class="imgW20" mode="widthFix" />
+        </view>
+    </view>
+</view>
+
+<view class="no-cart" wx:else>
+    <view class="c">
+        <view class="title-box">
+            购物车空空如也～
+        </view>
+        <!--<view class="to-index-btn" bindtap="goEshopPortal">-->
+            <!--去逛逛-->
+        <!--</view>-->
+    </view>
+</view>
+
+<!--  底部按钮  -->
+<view class="posf-b2">
+    <view style="" class="tabs text-center backgW " wx:if="{{cartGoods.length>0}}">
+        <view style="" class="tab-item3 text-l fontS14 line-h46 pd-l-10">
+            <radio value="1" checked="{{isCheckAll? 'checked' : ''}}" bindtap="checkAllItem"/>
+            {{cartTotal.checkedGoodsCount>0? '已选('+ cartTotal.checkedGoodsCount +')': '全选'}}
+        </view>
+        <view style="" class="tab-item2 fontS14 colRed line-h46">￥{{cartTotal.checkedGoodsAmount}}</view>
+        <view style="" class="tab-item2 fontS14 bg-red line-h46 {{cartTotal.checkedGoodsCount>0?'':'disable'}}" catchtap="checkoutOrder">下单</view>
+    </view>
+
+    <tarbar bar="{{pageTarbar}}"></tarbar>
+</view>

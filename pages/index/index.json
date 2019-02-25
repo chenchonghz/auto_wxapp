@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "login-alert": "/components/auth/loginAlert/loginAlert",
+    "tarbar": "/components/basic/tarbar/tarbar",
+    "s-title": "/components/basic/sTitle/sTitle",
+    "photo": "/components/basic/photo/photo",
+    "phase": "/components/basic/phase/phase",
+    "image-title": "/components/basic/imageTitle/imageTitle",
+    "blank-line": "/components/basic/blankLine/blankLine",
+    "s-text": "/components/basic/sText/sText",
+    "s-button": "/components/basic/sButton/sButton",
+    "two-box": "/components/basic/twoBox/twoBox",
+    "four-box": "/components/basic/fourBox/fourBox",
+    "s-audio": "/components/basic/sAudio/sAudio",
+    "phone-call": "/components/basic/phoneCall/phone",
+    "swiper-images": "/components/basic/swiperImages/swiperImages",
+    "banner": "/components/eshop/banner/banner",
+    "goods-list-a": "/components/eshop/goodsListA/goodsListA"
+  }
+}

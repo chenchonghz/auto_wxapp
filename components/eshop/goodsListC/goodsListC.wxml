@@ -1,0 +1,16 @@
+<view class="ztmc">
+    <view class="h"></view>
+    <view class="c">
+        <block wx:for="{{goods}}" for-index="index" wx:key="index">
+            <navigator>
+                <view class="item">
+                    <view class="a">
+                        <view class="img">
+                            <image src="http://www.17sucai.com/preview/23816/2018-09-29/mzwap/mzwap/img/pic1.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

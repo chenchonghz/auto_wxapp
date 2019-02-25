@@ -1,0 +1,15 @@
+<block wx:if="{{bar}}">
+    <view class="" style="height:60px;"></view>
+    <!--  底部按钮  -->
+    <view style="" class="tabs text-center posf-b2" style="{{'background-color:'+bar.backgroundColor}}" >
+        <block wx:for="{{bar.list}}" wx:key="index">
+            <view catchtap="switchTab" class="tab-item1" data-url="{{item.pagePath}}" data-active="{{item.active}}" style="{{item.active?('color:'+ bar.selectedColor): ''}}">
+                <image src="{{imgHost + item.selectedIconPath}}" wx:if="{{item.active}}" style="" class="imgW20" mode="widthFix" alt="" title=""></image>
+                <image src="{{imgHost + item.iconPath}}" wx:else style="" class="imgW20" mode="widthFix" alt="" title=""></image>
+                <view class="fontS12">{{item.text}}</view>
+            </view>
+        </block>
+    </view>
+</block>
+
+

@@ -1,0 +1,60 @@
+/* CSS Document */
+button::after{ border: none; }
+button.borderN {border: none;}
+.zhe{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 4;
+}
+.boxsq{
+    position: fixed;
+    top: 16%;
+    right:30px;
+    left:30px;
+    background-color:#fff;
+    z-index: 5;
+    border-radius: 4px;
+}
+.boxsq .title{padding:10px;}
+.boxsq .con{padding:30px 20px;}
+.boxsq button{background-color:#fff;border-right: solid 1px #eee;}
+.colGreen {color: #14c58b;}
+.col-gary {color: #aaa;}
+.fontS12{font-size: 12px;}
+.fontS14{font-size:14px;}
+.fontS16{font-size: 16px!important;}
+.text-center {text-align: center;}
+.border-b {border-bottom: solid 1px #eee;}
+.mg-t-sm {margin-top: 10px;}
+.mg-b-sm {margin-bottom: 10px;}
+.pd-b-sm {padding-bottom: 10px;}
+.tabs{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: solid 1px #eee;
+}
+.tab-item1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-top:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+    border-right:solid 1px #ddd;
+}
+
+
+/*# sourceMappingURL=text.css.map */

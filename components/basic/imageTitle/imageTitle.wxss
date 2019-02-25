@@ -1,0 +1,26 @@
+.backgTr {
+    background-color: transparent;
+}
+.backgW {
+    background-color: #fff!important;
+}
+.mg-b-sm {
+    margin-bottom: 10px;
+}
+.pos-re{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
+.fonts14{
+    font-size: 14px;
+}
+.fonts20{
+    font-size: 20px;
+}
+.textS{
+    text-shadow: 2px 2px 3px #000000;
+    -webkit-text-shadow: 2px 2px 3px #000000;
+    -moz-text-shadow:2px 2px 3px #000000;
+}

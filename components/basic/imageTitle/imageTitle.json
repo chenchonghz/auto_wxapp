@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "photo": "/components/basic/photo/photo",
+    "s-text": "/components/basic/sText/sText"
+  }
+}

@@ -1,0 +1,8 @@
+<view class="list pd-l-20 " style="{{style1}}">
+    <view class="item borderN pd-l-0 {{class2}}" catchtap="makeCall">
+        <image src="{{staticImgHost}}icon_phone.png"  mode="widthFix" style="{{style2}}"/>
+        <span style="{{style3}}">
+        {{phoneNumber}}
+        </span>
+    </view>
+</view>

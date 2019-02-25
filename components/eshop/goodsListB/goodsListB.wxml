@@ -1,0 +1,23 @@
+<view class="a-section a-popular" wx:if="{{offGoods.length>0}}">
+    <view class="h">
+        <view>
+            <navigator url="../hotGoods/hotGoods">
+                <text class="txt">促销商品</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="b">
+        <view class="item" wx:for="{{offGoods}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">
+            <navigator url="/pages/eshop/goods/goods?id={{item.id}}">
+                <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
+                <view class="right">
+                    <view class="text">
+                        <text class="name">{{item.name}}</text>
+                        <text class="desc">{{item.goods_brief}}</text>
+                        <text class="price">￥{{item.retail_price}}</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="bg_default" style="{{style1}}" catchtap="onTap" bindlongpress="onLongtap">
+    <view style="{{style2}}"><!-- border-b-s border-b-w border-b-c text-l-->
+        <span class="{{class3}}" style="{{style3}}">{{text}}</span><!--  line1-l-w line1-l-c line1-l-p -->
+    </view>
+</view>

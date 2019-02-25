@@ -1,0 +1,38 @@
+.item {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+}
+.item.borderN,
+.panel-footer.borderN {border: none;}
+
+.item.border-b, .border-b {border-bottom: solid 1px #ddd;}
+
+/*   颜色：这里是蓝色  */
+.color{color: #2aa2c1;}
+input,span,image{display: inline-block;vertical-align:middle;}
+
+.fontS16{font-size:16px;}
+/*   居中  居左  居右  */
+.text-c{text-align: center;}
+.text-l{text-align: left;}
+.text-r{text-align: right;}
+.mg-r-20{margin-right: 20px;}
+.imgW20{width:20px;height:20px;}
+/*  字体加粗 */
+.fontW{font-weight: bold}
+
+/*  字体加粗 */
+.fontW{font-weight: bold}
+
+/*  字体倾斜 */
+.fontI{font-style:italic}
+
+/*   字体阴影  */
+.textS{text-shadow: 2px 2px 4px #000000;}

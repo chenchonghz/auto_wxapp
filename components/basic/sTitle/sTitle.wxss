@@ -1,0 +1,35 @@
+/* CSS Document */
+
+
+/*  字体下划线 */
+.text-under{text-decoration: underline;}
+
+/* 字体居左显示  有时不写也是居左显示  */
+.text-l{text-align: left;}
+
+/* 字体居中显示  */
+.text-c{text-align: center;}
+
+/* 字体居右显示  */
+.text-r{text-align: right;}
+
+
+/*  字体加粗 */
+.fontW{font-weight: bold}
+
+/*  字体倾斜 */
+.fontI{font-style:italic}
+
+/*   阴影  */
+.textS{text-shadow: 2px 2px 4px #000000;}
+
+.bg_default{
+    background-color: #fff;
+}
+/*  左侧小标志1   */
+/*   宽度  */
+.line1-l-w{border-left: solid 3px;}
+/*   颜色  */
+.line1-l-c{border-left-color:  #c7d342;}
+/*   距离  */
+.line1-l-p{padding-left: 10px;}

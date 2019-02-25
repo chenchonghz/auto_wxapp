@@ -1,0 +1,69 @@
+/* CSS Document */
+
+
+.imgW20{width: 20px;height: 20px;}
+.fontS12{font-size: 12px!important;}
+.fontS14{font-size:14px;}
+.fontS16{font-size: 16px!important;}
+.text-center {text-align: center;}
+.mg-b-sm {margin-bottom: 10px;}
+
+
+
+
+span,image{vertical-align: middle;}
+.pd-40{padding:40px;}
+.imgW70{width:70px;height:70px;}
+.col-fff{color:#fff;}
+.item.borderN,
+.panel-footer.borderN {border: none;}
+.item.border-b,.border-b{border-bottom: solid 1px #eee;}
+.mg-r-10{margin-right: 10px;}
+.right-20{right:20px;}
+
+
+
+.backgW{
+    background-color: #fff!important;
+}
+
+.pd-l-20{
+    padding-left: 20px;
+}
+.item {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    padding: 16px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+}
+.pd-l-0{
+    padding-left: 0;
+}
+.pd-r-40{
+    padding-right: 40px;
+}
+.imgW16{
+    width:16px;
+    height: 16px;
+}
+.pull-right.imgW16 {
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    display: block;
+    margin-top: -8px;
+}
+.backgTr{
+    background-color: transparent!important;
+}
+
+.button-red{background-color:#ee4c44;color:#fff;}
+.button-red-clik{background-color:#ba1d15;color:#fff;}
+
+/*# sourceMappingURL=text.css.map */

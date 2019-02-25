@@ -1,0 +1,44 @@
+
+<view class="tabs backgW item borderN pd-0 mg-b-sm fontS14">
+    <view wx:for="{{tabList}}" wx:key="{{tab.code}}" wx:for-item="tab"
+            class="tab-item1 pd-16 {{currentTab==tab.code?'topActive':''}}" data-current="{{tab.code}}" catchtap="clickTab">{{tab.label}}</view>
+</view>
+<view>
+    <view class="container">
+        <view class="orders" wx:if="{{orderList.length>0}}">
+            <navigator url="../orderDetail/orderDetail?id={{item.id}}" class="order" wx:for="{{orderList}}" wx:key="{{item.id}}">
+                <view class="h">
+                    <view class="l">订单编号：{{item.order_sn}}</view>
+                    <view class="r">{{item.order_status_text}}</view>
+                </view>
+                <view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+                    <view class="img">
+                        <image src="{{gitem.list_pic_url}}"></image>
+                    </view>
+                    <view class="info">
+                        <text class="name">{{gitem.goods_name}}</text>
+                        <text class="number">共{{gitem.number}}件商品</text>
+                    </view>
+                    <view class="status"></view>
+                </view>
+                <view class="b">
+                    <view class="l">实付：￥{{item.actual_price}}</view>
+                    <view class="">
+                        <button class="r btn red" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">去付款</button>
+                        <button class="r btn" data-order-index="{{index}}" catchtap="cancelOrder" wx:if="{{item.handleOption.cancel}}">取消订单</button>
+                        <button class="r btn" data-order-index="{{index}}" catchtap="deleteOrder" wx:if="{{item.handleOption.delete}}">删除订单</button>
+                        <button class="r btn red" data-order-index="{{index}}" catchtap="commentOrder" wx:if="{{item.handleOption.comment}}">去评价</button>
+                        <button class="r btn red" data-order-index="{{index}}" catchtap="confirmOrder" wx:if="{{item.handleOption.confirm}}">确认收货</button>
+                        <button class="r btn" data-order-index="{{index}}" catchtap="false" open-type="contact" wx:if="{{item.handleOption.return}}">退换货</button>
+                        <button class="r btn yellow" data-order-index="{{index}}" catchtap="buyOrder" wx:if="{{item.handleOption.buy}}">再次购买</button>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class='no-course' wx:else>
+            <image class='img' src='{{staticImgHost}}my_course_empty.png'></image>
+            <text class='desc'>没有订单~</text>
+        </view>
+    </view>
+</view>
+

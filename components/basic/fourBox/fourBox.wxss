@@ -1,0 +1,53 @@
+/* CSS Document */
+
+.bg_default{
+    background-color: #fff;
+}
+
+/*  上方外边距 */
+.mg-t{margin-top:2px;}
+
+/*  右方外边距 */
+.mg-r{margin-right:2px;}
+.mg-r2{margin-right:1%;}
+
+/*  下方外边距 */
+.mg-b{margin-bottom:12px;}
+
+/*  左方外边距 */
+.mg-l{margin-left:2px;}
+
+/*  边框样式 */
+.border-s{border-style: solid;}
+/*  边框宽度 */
+.border-w{border-width: 1px;}
+/*  边框颜色 */
+.border-c{border-color: #ddd;}
+
+/*   阴影  */
+.boxS{box-shadow: 2px 2px 4px rgba(0,0,0,.2);}
+
+/*  透明度 */
+.opc{opacity:0.7;}
+
+/* 行高 */
+.line-h{line-height:1;}
+
+/* 清除浮动  必须加 */
+.clearfix {zoom: 1;overflow: hidden;}
+
+/* 宽度 */
+.width{width:24%;box-sizing: border-box;}
+
+/* 左浮动 */
+.fl{float:left;}
+
+/* 右浮动 */
+.fr{float:right;}
+
+/*    设置圆角 */
+.img-circle2{border-radius: 4px;overflow: hidden;}
+
+
+
+/*# sourceMappingURL=text.css.map */

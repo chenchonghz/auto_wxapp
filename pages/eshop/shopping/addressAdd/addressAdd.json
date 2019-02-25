@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "编辑地址",
+  "usingComponents": {
+    "addr-select": "/components/external/addr-select/index",
+    "dialog-modal": "/components/external/dialog-modal/index"
+  }
+}

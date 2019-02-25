@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/eshop/portal/portal",
+    "pages/index/index",
+    "pages/videoFull/videoFull",
+    "pages/eshop/goods/goods",
+    "pages/eshop/catalog/catalog",
+    "pages/eshop/category/category",
+    "pages/eshop/search/search",
+    "pages/eshop/cart/cart",
+    "pages/eshop/shopping/checkout/checkout",
+    "pages/eshop/shopping/selCoupon/selCoupon",
+    "pages/eshop/shopping/address/address",
+    "pages/eshop/shopping/addressAdd/addressAdd",
+    "pages/eshop/ucenter/index/index",
+    "pages/eshop/ucenter/coupon/coupon",
+    "pages/eshop/ucenter/order/order",
+    "pages/eshop/ucenter/orderDetail/orderDetail",
+    "pages/eshop/ucenter/address/address",
+    "pages/eshop/ucenter/addressAdd/addressAdd",
+    "pages/eshop/ucenter/collect/collect",
+    "pages/eshop/ucenter/rate/rate",
+    "pages/eshop/ucenter/mobile/mobile",
+    "pages/eshop/pay/pay",
+    "pages/eshop/payResult/payResult",
+    "pages/eshop/comment/comment"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

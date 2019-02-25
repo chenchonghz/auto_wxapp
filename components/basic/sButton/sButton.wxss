@@ -1,0 +1,46 @@
+/* CSS Document */
+
+/*  背景色 */
+.bg{background-color: #14c58b;}
+
+/*  字号 */
+.fontS{font-size: 16px;}
+
+/*  字体加粗 */
+.fontW{font-weight: bold}
+
+/*  字体倾斜 */
+.fontI{font-style:italic}
+
+/*  边框样式 */
+.border-s{border-bottom-style: solid;}
+/*  底部边框宽度 */
+.border-w{border-bottom-width: 1px;}
+/*  底部边框颜色 */
+.border-c{border-bottom-color: #ddd;}
+
+/*   阴影  */
+.textS{text-shadow: 2px 2px 4px #000;}
+
+
+.hoverClass{
+    opacity:0.7;
+}
+
+/* 定位在底部*/
+.fix-b{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+}
+/* 定位在上部*/
+.fix-t{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+}
+
+
+/*# sourceMappingURL=text.css.map */

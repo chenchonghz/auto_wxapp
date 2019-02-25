@@ -1,0 +1,12 @@
+.img-circle {
+    border-radius:50%;
+}
+.border-cir {
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+}
+.bg_default{
+    background-color: #fff;
+}

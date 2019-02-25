@@ -1,0 +1,8 @@
+<view bindtap="playVideo" style="{{style}}">
+    <view class="pos-re">
+        <!--  视频  -->
+        <image src="{{poster}}" class="full op7" mode="widthFix"/>
+        <!--  播放小图片  -->
+        <image src="/static/images/icon_video_play.png" class="imgW60 pos-ab" mode="widthFix"/>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="good-grid" wx:for="{{goods}}" wx:key="{{item.id}}">
+    <view class="h">
+        <view>
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+    <view class="b">
+        <block wx:for="{{item.goodsList}}" wx:for-index="iindex" wx:for-item="iitem" wx:key="{{iitem.id}}">
+            <view class="item {{iindex % 2 == 0 ? '' : 'item-b'}}">
+                <navigator url="/pages/eshop/goods/goods?id={{iitem.id}}" class="a">
+                    <image class="img" src="{{iitem.list_pic_url}}" background-size="cover"></image>
+                    <text class="name">{{iitem.name}}</text>
+                    <text class="price">￥{{iitem.retail_price}}</text>
+                </navigator>
+            </view>
+        </block>
+        <view class="item {{item.goodsList.length % 2 == 0?'': 'item-b'}} item-more">
+            <navigator url="/pages/eshop/category/category?id={{item.id}}" class="more-a">
+                <view class="txt">{{'更多'+item.name+'好物'}}</view>
+                <image class="icon" src="{{staticImgHost}}icon_go_more.png" background-size="cover"></image>
+            </navigator>
+        </view>
+    </view>
+</view>

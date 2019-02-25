@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="borderN backgTr">
+    <view class="list backgW">
+        <view class="item pd-l-20 pd-r-40 borderN border-b fontS14">
+            <span class="mg-r-xs">评价</span>
+                <wux-rater slot="footer" auto="{{ false }}" value="{{ totals.totalStars }}" disabled/>
+            <span class="">{{totals.favorableRating}}%好评</span>
+            <view class="mg-t-xs">
+                <span class="button {{currentTab==0?'button-red':'button-gary'}}" data-current="0" bindtap="clickTab" >全部({{totals.all}})</span>
+                <span class="button {{currentTab==1?'button-red':'button-gary'}}" data-current="1" bindtap="clickTab">好评({{totals.good}})</span>
+                <span class="button {{currentTab==2?'button-red':'button-gary'}}" data-current="2" bindtap="clickTab">中评({{totals.notBad}})</span>
+                <span class="button {{currentTab==3?'button-red':'button-gary'}}" data-current="3" bindtap="clickTab">差评({{totals.bad}})</span>
+                <span class="button {{currentTab==4?'button-red':'button-gary'}}" data-current="4" bindtap="clickTab">有图({{totals.hasPic}})</span>
+            </view>
+        </view>
+    </view>
+
+    <block wx:for="{{commentList}}" wx:for-item="comment" wx:for-index="index" wx:key="index">
+        <view style="border-bottom:solid 1px #ddd;">
+            <view class="list backgW">
+                <view class="item pd-l-20 pd-r-40 borderN">
+                    <image class="imgW40 mg-r-md img-circle" style="" src="{{comment.user_info.avatar}}" mode="widthFix"></image>
+                    <span class="fontS14 mg-r-xs">{{comment.user_info.nickname}}</span>
+                    <wux-rater slot="footer" auto="{{ false }}" value="{{ comment.stars }}" font-size="15" disabled/>
+                </view>
+            </view>
+
+            <view class="pd-l-20 backgW">
+                <view class="item pd-r-40 borderN  pd-t-0 pd-b-0">
+                    <view class="fontS12 col-gary">{{comment.add_time}}</view>
+                    <text class="fontS14">{{comment.content}}</text>
+                </view>
+            </view>
+
+            <view class="panel-body backgW item borderN">
+                <block wx:for="{{comment.pic_list}}" wx:for-item="pic" wx:for-index="picIndex" wx:key="picIndex">
+                    <view  wx:if="{{pic.video_url}}" class="imgbox5 pos-re" bindtap="playVideo" data-url="{{pic.video_url}}" style="background: url('{{pic.pic_url}}') no-repeat center;background-size: 100%;" >
+                        <image class="full op7" style="" src="{{staticImgHost}}img26.png" mode="widthFix"></image>
+                        <image src="/static/images/icon_video_play.png" class="imgW40 pos-ab" mode="widthFix"/>
+                    </view>
+                    <view wx:else class="imgbox5" bindtap="previewImage" data-url="{{pic.pic_url}}"
+                          style="background: url('{{pic.pic_url}}') no-repeat center;background-size: 100%;" >
+                        <image class="" style="width:100%;" src="{{staticImgHost}}img26.png" mode="widthFix"></image>
+                    </view>
+                </block>
+
+
+
+                <!--<view class="col-gary fontS14 bg-gary pd-10">-->
+                <!--<font class="col-blk">商家回复:</font>-->
+                <!--请最多上传5张图请最多上传5张图请最多上传5张图-->
+                <!--</view>-->
+            </view>
+        </view>
+    </block>
+
+
+
+</view>

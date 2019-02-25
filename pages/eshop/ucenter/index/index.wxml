@@ -1,0 +1,75 @@
+<view class="pd-40 text-center" style="background: url('{{staticImgHost}}img30.jpg') no-repeat;background-size:auto 100%;background-position: center;">
+    <image wx:if="{{userInfo && userInfo.avatarUrl}}" class="imgW70 mg-b-sm" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+    <image wx:else class="imgW70 mg-b-sm" src="{{staticImgHost}}img52.jpg" mode="widthFix"></image>
+    <view class="fontS16 col-fff">{{ userInfo.nickName }}</view>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="/pages/eshop/ucenter/order/order">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_order.png" mode="widthFix"></image>
+            <span class="width80 fontS14">我的订单</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="/pages/eshop/ucenter/groupBuy/groupBuy">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_group_buy.png" mode="widthFix"></image>
+            <span class="width80 fontS14">我的团购</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="/pages/eshop/ucenter/coupon/coupon">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_coupon.png" mode="widthFix"></image>
+            <span class="width80 fontS14">我的优惠券</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="../collect/collect">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_my_collect.png" mode="widthFix"></image>
+            <span class="width80 fontS14">我的收藏</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="../address/address">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_address.png" mode="widthFix"></image>
+            <span class="width80 fontS14">地址管理</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="list pd-l-20 backgW">
+    <navigator url="../mobile/mobile">
+        <view class="item pd-r-40 borderN border-b pd-l-0">
+            <image class="imgW16 mg-r-10" src="{{staticImgHost}}icon_bind_mobile.png" mode="widthFix"></image>
+            <span class="width80 fontS14">绑定手机</span>
+            <image class="pull-right imgW16 right-20" src="{{staticImgHost}}img3.png" mode="widthFix"></image>
+        </view>
+    </navigator>
+</view>
+
+<view class="item padding-vertical borderN backgTr" style="display:none;">
+    <button class="fontS16 button-block button-positive button-red" hover-class="button-red-clik"
+        bindtap="exitLogin">
+        退出登录
+    </button>
+</view>
+
+<tarbar bar="{{pageTarbar}}"></tarbar>
+

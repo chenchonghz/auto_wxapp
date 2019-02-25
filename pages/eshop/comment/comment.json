@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品评价",
+  "usingComponents": {
+    "wux-rater": "/components/external/wux/rater/index"
+  }
+}

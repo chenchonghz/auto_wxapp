@@ -1,0 +1,53 @@
+/* CSS Document */
+.text-center {text-align: center;}
+
+.backgW {background-color: #fff!important;}
+.img-circle {border-radius: 50%;}
+input,span{    display: inline-block;    vertical-align:middle; }
+.pos-re{    position: relative;}
+.fontS12{ font-size:12px;}
+.fontS14{    font-size:14px;}
+.fontS18{ font-size:18px;}
+
+.imgW20{  width:20px;  height:20px;}
+
+.tabs{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: solid 1px #e5e5e5;
+}
+.tab-item1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-top:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+    padding-top:10px
+}
+
+.tab-item1 image{margin:auto;display: block;margin-bottom:0;}
+.tab-item1 view{margin-top:4px;margin-bottom:8px;}
+.bg-red{background-color:#ee4c44;color:#fff;}
+.posf-b2{
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom: 0px;
+    background-color: #fff;
+    /*box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.6);*/
+    z-index:9999;
+}
+.posf-active >view{color:#ee4c44;}
+
+.imgW15{width:15px;height:15px;}
+.t5-r5{ position: absolute;top:5px;right:5px;}

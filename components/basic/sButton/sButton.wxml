@@ -1,0 +1,8 @@
+<view class="{{class1}}" style="{{style1}}"> <!--bg  fix-b-->
+    <!--col fontS fontW border-s border-w border-c-->
+    <button class="{{class2}}" hover-class="hoverClass" style="{{style2}}"
+            catchtap="onTap" bindlongpress="onLongtap">
+        {{text}}
+    </button>
+</view>
+

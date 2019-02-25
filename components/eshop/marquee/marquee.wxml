@@ -1,0 +1,11 @@
+<view class="posf-b3 box-circle100 clearfix" style="">
+
+    <image class="imgW40 fl img-circle mg-r-sm" style="" src="{{staticImgHost}}img52.jpg" mode="widthFix"></image>
+    <span class="fontS14 col-fff width50b">雷军 刚刚购买了 华为P9 plus</span>
+
+    <!--      -->
+    <image class="imgW30 fr mg-t-sm" style="" src="/static/images/img55.png" mode="widthFix"></image>
+    <span class="fontS12 col-fff fr">马上抢购</span>
+
+</view>
+

@@ -1,0 +1,27 @@
+.clearfix{overflow: hidden; zoom:1;}
+.fl{ float:left; }
+.fr{ float:right;}
+
+.pd-15{padding:10px;}
+.pd-l-90{padding-left:90px;}
+
+.pos-re{position: relative;}
+.pos-ab{position: absolute;}
+.imgW50{width:70px;height:70px;}
+.imgW40{width:40px;height:40px;}
+.left-div{top:0;left:0;bottom:0;width:90px;}
+.left-img{top:50%;left:10px;margin-top:-35px;}
+
+.right-div{top:0;right:0;bottom:0;width:90px;}
+.right-img{top:10px;right:20px;}
+
+/*  字号 */
+.fontS16{font-size: 16px;}
+.fontS14{font-size: 14px;}
+.fontS12{font-size: 12px;}
+
+.line-height40{
+    line-height: 40px;
+}
+.width68{width:68%;}
+/*  slider{margin:0;} */

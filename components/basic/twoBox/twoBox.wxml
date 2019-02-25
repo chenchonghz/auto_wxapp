@@ -1,0 +1,18 @@
+<view class="clearfix bg_default" style="{{style1}}">
+    <block wx:for="{{dataList}}" wx:for-item="item" wx:key="index">
+        <!--img-circle2 -->
+        <view class="width {{(index+1)%2==1?'fl':'fr'}} {{class2}}" style="{{style2}}"
+              data-index="{{index}}">
+            <view>
+                <photo src="{{item.image}}" stylePhoto="{{stylePhoto}}"
+                       eventTap="{{item.eventTap}}" eventLongtap="{{item.eventLongtap}}"></photo>
+
+                <block wx:for="{{item.texts}}" wx:for-item="text" wx:key="index">
+                    <s-text text="{{text}}" styleText="{{myStyleText}}"
+                            eventTap="{{item.eventTap}}" eventLongtap="{{item.eventLongtap}}"></s-text>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>
+

@@ -1,0 +1,23 @@
+<block>
+    <view class="backgW pd-15 pd-l-90 pos-re" style="{{myStyle}}">
+        <view class="pos-ab left-div">
+            <image wx:if="{{cover}}" class="imgW50 pos-ab left-img" src="{{cover}}" mode="widthFix"></image>
+            <image wx:else class="imgW50 pos-ab left-img" src="{{staticImgHost}}audio_default.png" mode="widthFix"></image>
+        </view>
+        <view class="pos-ab right-div">
+            <image wx:if="{{isPlay==false}}" catchtap="play" class="imgW40 pos-ab right-img" src="{{staticImgHost}}img53.png" mode="widthFix"></image>
+            <image wx:else catchtap="pause" class="imgW40 pos-ab right-img" src="{{staticImgHost}}img54.png" mode="widthFix"></image>
+        </view>
+        <view class="fontS16">{{title}}</view>
+        <view wx:if="{{author}}" class="fontS12 col-gary">{{author}}</view>
+        <view class="clearfix">
+            <view class="fl width68" style="">
+                <slider bindchange="change" bindchanging="changing" step="1" value="{{slider_value}}" block-size="14"
+                        backgroundColor="#373636" activeColor="#FF1744" block-color="#14c58b"/>
+            </view>
+            <view class="fr col-gary fontS12 line-height40">
+                <span>{{now_time}}</span> / <span class="">{{duration}}</span>
+            </view>
+        </view>
+    </view>
+</block>

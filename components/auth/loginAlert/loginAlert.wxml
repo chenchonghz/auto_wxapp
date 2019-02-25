@@ -1,0 +1,26 @@
+<block wx:if="{{isShow}}">
+    <view class="zhe"></view>
+    <view class="boxsq" wx:if="{{canIUse}}">
+        <view class="title text-center border-b fontS16">提示</view>
+        <view class="con">
+            <view class="fontS14" style="text-align:center;">
+                {{alertMsg}}
+            </view>
+        </view>
+        <view class="tabs">
+            <button open-type="getUserInfo" bind:getuserinfo="bindGetUserInfo"
+                    class="tab-item1 borderN fontS16 colGreen" >{{buttonText}}</button>
+        </view>
+    </view>
+    <view class="boxsq" wx:else>
+        <view class="title text-center border-b fontS16">提示</view>
+        <view class="con">
+            <view class="fontS14">
+                请升级微信版本
+            </view>
+        </view>
+        <view class="tabs">
+            <button class="tab-item1 borderN fontS16 colGreen" >好</button>
+        </view>
+    </view>
+</block>

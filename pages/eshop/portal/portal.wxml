@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<login-alert></login-alert>
+
+<block wx:for="{{structure.sections}}" wx:for-item="section" wx:key="section.sectionId" >
+    <!--图文标题-->
+    <block wx:if="{{section.component==1}}">
+        <image-title src="{{section.props.src}}" title="{{section.props.title}}" subtitle="{{section.props.subtitle}}"
+                     stylePhoto="{{section.props.stylePhoto}}"></image-title>
+    </block>
+    <!--空白行-->
+    <block wx:elif="{{section.component==2}}">
+        <blank-line styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                    styleBorderBottom="{{section.props.styleBorderBottom}}"
+                    styleHeight="{{section.props.styleHeight}}"></blank-line>
+    </block>
+    <!--图片-->
+    <block wx:elif="{{section.component==3}}">
+        <photo src="{{section.props.src}}"
+               stylePhoto="{{section.props.stylePhoto}}"
+               eventTap="{{section.props.eventTap}}"
+               eventLongtap="{{section.props.eventLongtap}}"></photo>
+    </block>
+    <!--标题-->
+    <block wx:elif="{{section.component==4}}">
+        <title text="{{section.props.text}}"
+               styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+               styleText="{{section.props.styleText}}"
+               styleBorderBottom="{{section.props.styleBorderBottom}}"
+               styleLineMark="{{section.props.styleLineMark}}"
+               stylePadding="{{section.props.stylePadding}}"
+               eventTap="{{section.props.eventTap}}"
+               eventLongtap="{{section.props.eventLongtap}}"></title>
+    </block>
+    <!--段落-->
+    <block wx:elif="{{section.component==5}}">
+        <phase text="{{section.props.text}}"
+               styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+               styleText="{{section.props.styleText}}"
+               stylePadding="{{section.props.stylePadding}}"
+               eventTap="{{section.props.eventTap}}"
+               eventLongtap="{{section.props.eventLongtap}}"></phase>
+    </block>
+    <!--标准按钮-->
+    <block wx:elif="{{section.component==6}}">
+        <s-button text="{{section.props.text}}"
+                  styleText="{{section.props.styleText}}"
+                  stylePadding="{{section.props.stylePadding}}"
+                  styleBorder="{{section.props.styleBorder}}"
+                  styleButton="{{section.props.styleButton}}"
+                  eventTap="{{section.props.eventTap}}"
+                  eventLongtap="{{section.props.eventLongtap}}"></s-button>
+    </block>
+    <!--两格布局-->
+    <block wx:elif="{{section.component==8}}">
+        <two-box dataList="{{section.props.dataList}}"
+                 styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                 stylePadding="{{section.props.stylePadding}}"
+                 styleText="{{section.props.styleText}}"
+                 styleBox="{{section.props.styleBox}}"></two-box>
+    </block>
+    <!--四格布局-->
+    <block wx:elif="{{section.component==9}}">
+        <four-box dataList="{{section.props.dataList}}"
+                  styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                  stylePadding="{{section.props.stylePadding}}"
+                  styleText="{{section.props.styleText}}"
+                  styleBox="{{section.props.styleBox}}"></four-box>
+    </block>
+    <!--轮播图-->
+    <block wx:elif="{{section.component==10}}">
+        <swiper-images dataList="{{section.props.dataList}}"></swiper-images>
+    </block>
+    <!--音频-->
+    <block wx:elif="{{section.component==11}}">
+        <s-audio src="{{section.props.src}}"
+                 title="{{section.props.title}}"
+                 author="{{section.props.author}}"
+                 cover="{{section.props.cover}}"
+                 styleBackgroundColor="{{section.props.styleBackgroundColor}}"></s-audio>
+    </block>
+    <!--视频-->
+    <block wx:elif="{{section.component==12}}">
+        <s-video src="{{section.props.src}}"
+                 poster="{{section.props.poster}}"
+                 styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                 styleVideo="{{section.props.styleVideo}}"></s-video>
+    </block>
+    <!--一键拨号-->
+    <block wx:elif="{{section.component==17}}">
+        <phone-call phoneNumber="{{section.props.phoneNumber}}"
+                    styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                    styleText="{{section.props.styleText}}"></phone-call>
+    </block>
+    <!--位置-->
+    <block wx:elif="{{section.component==18}}">
+        <location location="{{section.props.location}}"
+                    styleBackgroundColor="{{section.props.styleBackgroundColor}}"
+                    styleText="{{section.props.styleText}}"></location>
+    </block>
+    <!--商品列表TYPE-A-->
+    <block wx:elif="{{section.component==19}}">
+        <goods-list-a></goods-list-a>
+    </block>
+    <!--商品列表TYPE-B-->
+    <block wx:elif="{{section.component==20}}">
+        <goods-list-b></goods-list-b>
+    </block>
+    <!--商品广告轮播-->
+    <block wx:elif="{{section.component==21}}">
+        <banner></banner>
+    </block>
+    <!--商品按钮导航-->
+    <block wx:elif="{{section.component==22}}">
+        <navi></navi>
+    </block>
+    <!--跑马灯-->
+    <block wx:elif="{{section.component==24}}">
+        <marquee></marquee>
+    </block>
+</block>
+
+<tarbar bar="{{pageTarbar}}"></tarbar>

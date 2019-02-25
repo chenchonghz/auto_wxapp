@@ -1,0 +1,19 @@
+.pos-re{
+    position: relative;
+}
+
+.full{width:100%}
+.op7{
+    opacity: 0.7;
+}
+.imgW60{
+    width:60px;
+    height: 60px;
+}
+.pos-ab.imgW60{
+    position: absolute;
+    top:50%;
+    margin-top:-30px;
+    left:50%;
+    margin-left:-30px;
+}

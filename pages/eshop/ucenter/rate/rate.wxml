@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<block wx:for="{{orderGoods}}" wx:for-item="goods" wx:for-index="index" wx:key="index">
+    <view class="borderN backgTr">
+        <view class="list backgW">
+            <view class="item pd-l-20 col-gary pd-r-40 borderN border-b">
+                <image class="imgW50 mg-r-md" style="" src="{{goods.list_pic_url}}" mode="widthFix"></image>
+                <span hover-class="none">
+                    <wux-rater slot="footer" default-value="5" allow-clear allow-touch-move value="{{comments[index].stars}}"
+                           data-index="{{index}}" bind:change="onStarChange" />
+                </span>
+                <view class="fontS14 col-gary mg-t-xs">{{goods.goods_specifition_name_value + " 数量:"+ goods.number}}</view>
+            </view>
+        </view>
+
+        <view class="pd-l-20 backgW">
+            <view class="item col-gary pd-r-40 borderN">
+            <textarea placeholder="来写下对宝贝的评价吧~" data-index="{{index}}" bindblur="bindInputField" maxlength="500"
+                      value="{{comments[index].content}}"
+                      class="fontS14" style="width:100%;" name="textarea"/>
+            </view>
+        </view>
+
+        <view class="panel-body backgW item borderN">
+            <block wx:for="{{comments[index].images}}" wx:for-item="img" wx:for-index="iindex" wx:key="img">
+                <view class="imgbox5 pos-re" bindtap="previewImage" data-url="{{img}}" style="background: url('{{img}}') no-repeat center;background-size: 100%;" >
+                    <image class="" style="width:100%;" src="{{staticImgHost}}img26.png" mode="widthFix"></image>
+                    <span class="button-del3" catchtap="deleteImg" data-index="{{index}}" data-value="{{img}}">
+                        <image class="imgW20" src="{{staticImgHost}}img28.png" mode="aspectFill"></image>
+                    </span>
+                </view>
+            </block>
+
+            <block wx:for="{{comments[index].videos}}" wx:for-item="video" wx:for-index="iindex" wx:key="iindex">
+                <view class="imgbox5 pos-re" bindtap="playVideo" data-url="{{video.url}}" style="background: url('{{video.urlimg}}') no-repeat center;background-size: 100%;" >
+                    <image class="full op7" style="" src="{{staticImgHost}}img26.png" mode="widthFix"></image>
+                    <image src="/static/images/icon_video_play.png" class="imgW40 pos-ab" mode="widthFix"/>
+                    <span class="button-del3" catchtap="deleteVideo" data-index="{{index}}" data-value="{{iindex}}">
+                        <image class="imgW20" src="{{staticImgHost}}img28.png" mode="aspectFill"></image>
+                    </span>
+                </view>
+            </block>
+
+            <view wx:if="{{(comments[index].images.length + comments[index].videos.length)<5}}"
+                  class="imgbox5" style="background: url('{{staticImgHost}}img68.png') no-repeat center;background-size: 100%;" >
+                <image class="" style="width:100%;" src="{{staticImgHost}}img26.png" mode="widthFix"
+                    data-index="{{index}}" catchtap="uploadImage"></image>
+            </view>
+
+            <view class="col-gary fontS14">请最多上传5张图或视频</view>
+        </view>
+    </view>
+    <block wx:if="{{index!=orderGoods.length-1}}">
+        <blank-line></blank-line>
+    </block>
+
+</block>
+
+
+<view class="item padding-vertical borderN backgTr">
+    <button class="button-block button-positive button-red fontS16" hover-class="button-blue-clik" bindtap="submitComments">
+        提交
+    </button>
+</view>

@@ -1,0 +1,7 @@
+<view class="bg_default" style="{{style1}}">
+    <image wx:if="{{src}}"
+           src="{{imgHost + src}}" mode="widthFix"
+           class="{{class2}}" style="{{style2}}"
+           catchtap="onTap" bindlongpress="onLongtap">
+    </image>
+</view>
